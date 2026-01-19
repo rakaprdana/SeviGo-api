@@ -24,9 +24,10 @@ const port = 3000;
 app.use(session({
   secret: getEnv('SESSION_SECRET'),
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false,
   cookie: {
-    secure: false, // set true if using HTTPS
+    secure: true, // set true if using HTTPS
+    sameSite: 'none'
     httpOnly: true
   }}));
 app.use(cors(corsOptions));
