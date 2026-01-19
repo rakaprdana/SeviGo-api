@@ -1,6 +1,6 @@
 import { CorsOptions } from 'cors';
 
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:3000', 'https://sevi-go-three.vercel.app'];
+const allowedOrigins = ['http://localhost:5173', 'http://localhost:3000', 'https://sevi-go-api.vercel.app/'];
 
 const corsOptions: CorsOptions = {
   origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
